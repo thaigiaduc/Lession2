@@ -4,12 +4,16 @@
 
 class Category extends Model
 {
-    protected $tables = 'categories';
+    private $tables = 'categories';
 
-    public function getCategoryList()
+    function tableFill()
     {
-        $data = $this->db->query("SELECT * from $this->tables")->fetchAll(PDO::FETCH_ASSOC);
-        return $data;
+        return $this->tables;
+    }
+
+    public function fieldFill()
+    {
+        return 'id, category_name, parent_id';
     }
 
     public function search()

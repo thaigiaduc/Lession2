@@ -34,9 +34,9 @@
                     $i = $startIndex;
                     foreach ($category_list as $item) :
                     ?>
-                        <tr data-toggle="modal" data-target="#detailCategoryModal" id="modal_detail<?php echo $item['id']; ?>" style="cursor: pointer;" onclick="detail(<?php echo $item['id']; ?>)">
-                            <td><?php echo ++$i ?></td>
-                            <td><?php echo $item['category_name']; ?></td>
+                        <tr>
+                            <td data-toggle="modal" data-target="#detailCategoryModal" id="modal_detail<?php echo $item['id']; ?>" style="cursor: pointer;" onclick="detail(<?php echo $item['id']; ?>)"><?php echo ++$i ?></td>
+                            <td data-toggle="modal" data-target="#detailCategoryModal" id="modal_detail<?php echo $item['id']; ?>" style="cursor: pointer;" onclick="detail(<?php echo $item['id']; ?>)"><?php echo $item['category_name']; ?></td>
                             <td>
                                 <i class="fa fa-pencil-square-o btn-outline-primary mr-2 modal-update-btn" id="modal_update<?php echo $item['id']; ?>" data-toggle="modal" style="cursor: pointer;" data-target="#updateCategoryModal" data-category-id="<?php echo $item['id']; ?>" onclick="update(<?php echo $item['id']; ?>)"></i>
                                 <i class="fa fa-files-o btn-outline-primary mr-2" aria-hidden="true" style="cursor: pointer;"></i>

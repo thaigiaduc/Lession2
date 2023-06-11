@@ -62,8 +62,4 @@ class Database {
             die();
         }
     }
-    
-    // function lastInsertId() {
-    //     return $this->__conn->lastInsertId();
-    // }
 }

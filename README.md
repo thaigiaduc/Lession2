@@ -1,5 +1,5 @@
 # Lession2
-# giới thiệu
+# Giới thiệu
 Mô hình:MVC.
 Ngôn ngữ: PHP.
 Database: mysql.
